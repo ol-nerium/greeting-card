@@ -1,7 +1,8 @@
+import BirthdayGreetingSite from '../BirthdayGreetingSite/BirthdayGreetingSite';
 import './App.css';
 
 function App() {
-  return <></>;
+  return <BirthdayGreetingSite />;
 }
 
 export default App;
