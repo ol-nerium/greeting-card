@@ -105,12 +105,20 @@ section:nth-child(4) {
 section:nth-child(5) {
   background-color: #56ab91;
 }
+section:nth-child(5) img {
+  object-position: right top;
+}
 section:nth-child(6) {
   background-color: #469d89;
 }
 section:nth-child(7) {
   background-color: #358f80;
+  /* color: rgb(169, 156, 156); */
 }
+section:nth-child(7) img {
+  opacity: 0.7;
+}
+
 section:nth-child(8) {
   background-color: #248277;
 }
