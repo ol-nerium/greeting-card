@@ -79,6 +79,10 @@ section.current .imgWrap {
   z-index: 111;
 }
 
+section.current span {
+  opacity: 1;
+}
+
 section:hover .section-text span {
   opacity: 1;
 }
@@ -101,6 +105,9 @@ section:nth-child(3) {
 }
 section:nth-child(4) {
   background-color: #67b99a;
+}
+section:nth-child(4) img {
+  object-position: 70% top;
 }
 section:nth-child(5) {
   background-color: #56ab91;
