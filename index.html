@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <main class="cards">
-      <section class="stack-cards__item">
+      <section class="stack-cards__item current">
         <div class="container">
           <h2 class="section-text">Привіт!</h2>
           <div class="imgWrap"><img src="./images/duck.jpg" alt="" /></div>
@@ -128,8 +128,12 @@
       <p class="footerText">Саша ♡</p>
     </footer>
 
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas1"></canvas>
 
-    <script src="./script.js" type="module"></script>
+    <img src="./images/stars_sprite.png" alt="stars_sprite" id="stars_sprite" />
+
+    <script src="./scripts/effect.js" type="module"></script>
+    <script src="./scripts/particle.js" type="module"></script>
+    <script src="./scripts/script.js" type="module"></script>
   </body>
 </html>

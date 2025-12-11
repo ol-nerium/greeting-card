@@ -32,18 +32,21 @@ img {
   margin: 0 auto;
   height: 100%;
   position: relative;
+
+  user-select: none;
 }
 
 .section-text {
   position: relative;
   font-size: 5rem;
-  z-index: 100;
   top: 50%;
   transform: translate(0, -50%);
   z-index: 200;
 }
 
 .section-text span {
+  display: block;
+
   color: rgb(24, 99, 165);
   opacity: 0;
   transition: opacity 1.5s linear;
@@ -61,11 +64,6 @@ img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* section:hover .imgWrap {
-  transform: scale(1.2);
-  z-index: 111;
-} */
-
 section.current .imgWrap {
   transform: scale(1.2);
   z-index: 111;
@@ -74,21 +72,6 @@ section.current .imgWrap {
 section:hover .section-text span {
   opacity: 1;
 }
-
-/* 
-.stack-cards {
-}
-
-.stack-cards__item {
-} */
-
-/* section {
-  outline: 1px solid red;
-}
-
-img {
-  outline: 1px solid blue;
-} */
 
 section {
   color: #fff;
@@ -102,51 +85,43 @@ section:nth-child(1) {
 }
 section:nth-child(2) {
   background-color: #88d4ab;
-  /* color: #fff; */
 }
 section:nth-child(3) {
   background-color: #78c6a3;
-  /* color: #fff; */
 }
 section:nth-child(4) {
   background-color: #67b99a;
-  /* color: #fff; */
 }
 section:nth-child(5) {
   background-color: #56ab91;
-  /* color: #fff; */
 }
 section:nth-child(6) {
   background-color: #469d89;
-  /* color: #fff; */
 }
 section:nth-child(7) {
   background-color: #358f80;
-  /* color: #fff; */
 }
 section:nth-child(8) {
   background-color: #248277;
-  /* color: #fff; */
 }
 section:nth-child(9) {
   background-color: #14746f;
-  /* color: #fff; */
 }
 section:nth-child(10) {
   background-color: #036666;
-  /* color: #fff; */
 }
 section:nth-child(11) {
   background-color: #036666;
-  /* color: #fff; */
 }
 
 section:nth-child(12) {
   background-color: #036666;
-  /* color: #fff; */
 }
 
 .footerText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   text-align: center;
   color: wheat;
@@ -155,11 +130,15 @@ section:nth-child(12) {
   bottom: 2rem;
 }
 
-#canvas {
+#canvas1 {
   position: fixed;
   inset: 0;
   /* background-color: black; */
-  /* z-index: 0; */
   width: 100%;
   height: 100%;
+  opacity: 0.5;
+}
+
+#stars_sprite {
+  display: none;
 }
