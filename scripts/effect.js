@@ -8,8 +8,8 @@ export default class Effect {
     this.height = this.canvas.height;
     this.particles = [];
     this.numberOfParticles = 50;
-    this.createParticles();
 
+    if (this.width > 1050) this.createParticles();
     this.mouse = {
       x: this.width / 2,
       y: this.height / 2,

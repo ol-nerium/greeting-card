@@ -45,11 +45,13 @@ img {
 }
 
 .section-text {
+  display: block;
   position: relative;
   font-size: 2rem;
   top: 50%;
   transform: translate(0, -50%);
   z-index: 200;
+  padding: 1rem;
 }
 
 .section-text span {
