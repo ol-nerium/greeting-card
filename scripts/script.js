@@ -2,13 +2,13 @@ import Effect from "./effect.js";
 
 window.addEventListener("load", () => {
   const allCards = document.querySelectorAll(".stack-cards__item");
-  const cardSize = allCards[0].getBoundingClientRect().height;
+  const halfCardSize = allCards[0].getBoundingClientRect().height / 2;
   let current = null;
   window.addEventListener("scroll", (e) => {
     allCards.forEach((element) => {
       if (
-        element.getBoundingClientRect().top > -cardSize / 2 &&
-        element.getBoundingClientRect().top < cardSize / 2 &&
+        element.getBoundingClientRect().top > -halfCardSize &&
+        element.getBoundingClientRect().top < halfCardSize &&
         current !== element
       ) {
         current = element;
